@@ -1,0 +1,8 @@
+main = "src/index.js"
+compatibility_date = "2023-07-01"
+usage_model = "bundled"
+
+node_compat = true
+
+[triggers]
+crons = []

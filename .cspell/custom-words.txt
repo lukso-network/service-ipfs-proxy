@@ -1,0 +1,8 @@
+algoliasearch
+pico
+picojs
+tsndr
+maxage
+ipfs
+keccak
+checksummed

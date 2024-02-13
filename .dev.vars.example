@@ -1,0 +1,16 @@
+# Please deploy this environment variables as wrangler secrets
+
+# Infura IPFS gateway
+INFURA_API_KEY=
+INFURA_PROJECT_ID=
+INFURA_GATEWAY_HOSTNAME=
+
+# The current pinata tokens used
+PINATA_TOKEN=
+PINATA_GATEWAY=
+PINATA_API_KEY=
+PINATA_SECRET_API_KEY=
+PINATA_JWT=
+
+# Shared secret for private uploading to pinata (optional)
+JWT_SECRET=

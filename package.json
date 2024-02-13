@@ -1,0 +1,22 @@
+{
+  "name": "service-cloudflare-4bytes-proxy",
+  "packageManager": "yarn@3.3.1",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "latest",
+    "wrangler": "3.15.0"
+  },
+  "private": true,
+  "scripts": {
+    "start": "wrangler dev",
+    "deploy": "wrangler publish"
+  },
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.20231025.0",
+    "@picojs/pico": "^0.3.1",
+    "@tsndr/cloudflare-worker-jwt": "^2.2.5",
+    "date-fns": "^2.30.0"
+  }
+}
