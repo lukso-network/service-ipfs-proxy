@@ -5,17 +5,17 @@ export const cors = {
   "Access-Control-Allow-Headers": "content-type,authorization",
 };
 
-export async function fetchWithTimeout(resource, options = {}) {
+export function fetchWithTimeout(resource, options = {}) {
   const { timeout = 8000 } = options;
 
   const controller = new AbortController();
   const id = setTimeout(() => controller.abort(), timeout);
 
-  const response = await fetch(resource, {
+  const response = fetch(resource, {
     ...options,
     signal: controller.signal,
-  });
-  clearTimeout(id);
+  }).finally(() => clearTimeout(id));
 
+  response.abort = () => controller.abort();
   return response;
 }
